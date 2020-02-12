@@ -138,9 +138,3 @@ class DataScraper():
 		print('Scraping game results from pro-football-reference.com for seasons {first}-{last}...'.format(first=self.seasons[0], last=self.seasons[-1]))
 		self.scrape_games()
 		print("Done.")
-
-
-dataScraper = DataScraper([i for i in range(2009, 2020)], 'raw_data')
-dataScraper.scrape_data()
-
-
